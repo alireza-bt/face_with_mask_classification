@@ -11,5 +11,14 @@ sample images:</br>
 ![sample2](./mask_classification/sample2.jpg)
 ![sample3](./mask_classification/sample3.jpg)
 
-After data cleaning and spliting data to 
+After data cleaning and spliting data to train/test set (90%/10%) I started designing different conv nets.</br>
+
+First convnet was a 5 layer model with 16, 32 number of filters and 60% accuracy (conv2D -> BatchNorm -> Relu -> Maxpool) x 5 + Fully_Conncted. </br>
+
+After Hyperparameter tuning I used a 3 layer convnet with 32, 32, 64 number of filters and reached above 92% accuracy.
+
+Final results of the convnet model are shown in the following.
+
 ![result](./mask_classification/result.png)
+
+Now I want to use Transfer Learning to see whether a more complex model can predit better or not.
